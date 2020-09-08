@@ -4,7 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://mmif.clams.ai"
+# url: "https://mmif.clams.ai"
+url: "https://marcverhagen.github.io/pages-test"
 baseurl: ""
 
 clams-url: "https://clams.ai"
