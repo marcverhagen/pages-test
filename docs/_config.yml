@@ -188,4 +188,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme
+
+remote_theme: clamsproject/website/theme
 
