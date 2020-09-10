@@ -190,5 +190,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-remote_theme: clamsproject/website/theme
-
+remote_theme: clamsproject/website-theme

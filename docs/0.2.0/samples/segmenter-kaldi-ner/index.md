@@ -10,7 +10,7 @@ This example contains one audio document and three views: one created by the aud
 
 We now give fragments of the three views, each with some comments.
 
-To see the full example scroll down to the end or open the [raw json file](east-tesseract-ner.json).
+To see the full example scroll down to the end or open the [raw json file](raw.json).
 
 ### Fragment 1: the Segmenter view
 
