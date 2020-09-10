@@ -5,8 +5,8 @@
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
 # url: "https://mmif.clams.ai"
-url: "https://marcverhagen.github.io"
-baseurl: "pages-test"
+url: "https://marcverhagen.github.io/pages-test"
+baseurl: "/pages-test"
 
 clams-url: "https://clams.ai"
 

@@ -472,8 +472,8 @@ To finish off this document we provide some examples of complete MMIF documents.
 
 | example                                                   | description                                                  |
 | --------------------------------------------------------- | ------------------------------------------------------------ |
-| [bars-tones-slates](samples/bars-tones-slates.md)         | A couple of time frames and some minimal text processing on a transcript. |
-| [east-tesseract-typing](samples/east-tesseract-typing.html) | EAST text box recognition followed by Tesseract OCR and semantic typing. |
+| [bars-tones-slates](samples/bars-tones-slates)         | A couple of time frames and some minimal text processing on a transcript. |
+| [east-tesseract-typing](samples/east-tesseract-typing) | EAST text box recognition followed by Tesseract OCR and semantic typing. |
 | [segmenter-kaldi-ner](samples/segmenter-kaldi-ner)     | Audio segmentation followed by Kaldi speech recognition and NER. |
 
 
