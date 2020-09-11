@@ -57,14 +57,14 @@ Here is an example document list with a video and its transcript:
 {
   "documents": [
     {
-      "@type": "http://mmif.clams.ai/0.2.0/VideoDocument",
+      "@type": "http://mmif.clams.ai/0.2.0/vocabulary/VideoDocument",
       "properties": {
         "id": "m1",
         "mime": "video/mpeg",
         "location": "/var/archive/video-0012.mp4" }
     },
     {
-      "@type": "http://mmif.clams.ai/0.2.0/TextDocument",
+      "@type": "http://mmif.clams.ai/0.2.0/vocabulary/TextDocument",
       "properties": {
         "id": "m2",
         "mime": "text/plain",
@@ -74,7 +74,7 @@ Here is an example document list with a video and its transcript:
 }
 ```
 
-The *@type* key has a special meaning in JSON-LD and it is used to define the type of a datastructure. In MMIF, the value should be a URL that points to a description of the type of document. Above we have a video and a text document and they are described at [http://mmif.clams.ai/0.2.0/VideoDocument](http://mmif.clams.ai/0.2.0/VideoDocument) and [http://mmif.clams.ai/0.2.0/TextDocument](http://mmif.clams.ai/0.2.0/TextDocument) respectively. Currently, four document types are defined: *VideoDocument*, *TextDocument*, *ImageDocument* and *AudioDocument*.
+The *@type* key has a special meaning in JSON-LD and it is used to define the type of a datastructure. In MMIF, the value should be a URL that points to a description of the type of document. Above we have a video and a text document and they are described at [http://mmif.clams.ai/0.2.0/vocabulary/VideoDocument](vocabulary/VideoDocument) and [http://mmif.clams.ai/0.2.0/vocabulary/TextDocument](vocabulary/TextDocument) respectively. Currently, four document types are defined: *VideoDocument*, *TextDocument*, *ImageDocument* and *AudioDocument*.
 
 The description also lists the properties that can be used for a type, and above we have the *id*, *mime* and *location* properties, used for the document identifier, its MIME type and the location of the document, which is a URL or a local path to a file. Alternatively, and for text only, the document could be inline, in which case the element is represented as in the *text* property in LIF, which is a JSON [value object](http://www.w3.org/TR/json-ld/#dfn-value-object) containing a *@value* key and optionally a *@language* key:
 
@@ -82,14 +82,14 @@ The description also lists the properties that can be used for a type, and above
 {
   "documents": [
     {
-      "@type": "http://mmif.clams.ai/0.2.0/VideoDocument",
+      "@type": "http://mmif.clams.ai/0.2.0/vocabulary/VideoDocument",
       "properties": {
         "id": "m1",
         "mime": "video/mpeg",
         "location": "/var/archive/video-0012.mp4" }
     },
     {
-      "@type": "http://mmif.clams.ai/0.2.0/TextDocument",
+      "@type": "http://mmif.clams.ai/0.2.0/vocabulary/TextDocument",
       "properties": {
         "id": "m1",
         "text": {
@@ -180,7 +180,7 @@ The value of the annotations property on a view is a list of annotation objects.
 }
 ```
 
-The two required keys are *@type* and *properties*. As mentioned before, the *@type* key in JSON-LD is used to define the type of a datastructure. The *properties* dictionary typically contains the features defined for the annotation category as defined in the vocabularies at [http://mmif.clams.ai/0.2.0/vocabulary](http://mmif.clams.ai/0.2.0/vocabulary) or [http://vocab.lappsgrid.org](http://vocab.lappsgrid.org/). For example, for the *TimeFrame* annotation type the vocabulary includes the feature *frameType* as well as the inherited features *id*, *start* and *end*. Values should be as specified in the vocabulary, values typically are strings, identifiers and integers, or lists of strings, identifiers and integers.
+The two required keys are *@type* and *properties*. As mentioned before, the *@type* key in JSON-LD is used to define the type of a datastructure. The *properties* dictionary typically contains the features defined for the annotation category as defined in the vocabularies at [http://mmif.clams.ai/0.2.0/vocabulary](vocabulary) or [http://vocab.lappsgrid.org](http://vocab.lappsgrid.org/). For example, for the *TimeFrame* annotation type the vocabulary includes the feature *frameType* as well as the inherited features *id*, *start* and *end*. Values should be as specified in the vocabulary, values typically are strings, identifiers and integers, or lists of strings, identifiers and integers.
 
 The *id* key should have a value that is unique relative to all annotation elements in the view. Other annotations can refer to this identifier either with just the identifier (for example “s1”) or the identifier with a view identifier prefix (for example “v1:s1”). If there is no prefix the current view is assumed.
 
