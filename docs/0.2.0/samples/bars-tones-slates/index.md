@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MMIF Specification
-subtitle: Version $VERSION {{ site.data.versions['current'] }}
+subtitle: Version $VERSION
 ---
 
 
