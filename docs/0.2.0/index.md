@@ -10,6 +10,8 @@ subtitle: version 0.2.0
 1. restore font size of p
 1. 90% font size of html
 1. 90% font size of pre
+1. removed font-size on p, restoring the original style
+
 
 Version: {{ site.data.versions['current'] }}
 
