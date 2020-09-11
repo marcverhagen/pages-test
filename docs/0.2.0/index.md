@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MMIF Specification
-subtitle: version 0.2.0
+subtitle: Version 0.2.0
 ---
 
 1. font size of p

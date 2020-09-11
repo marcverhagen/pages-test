@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MMIF Specification
-subtitle: Version $VERSION
+subtitle: Version 0.2.0
 ---
 
 # Example: Segmenter, Kaldi and NER 
