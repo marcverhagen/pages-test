@@ -4,7 +4,6 @@ title: MMIF Specification
 subtitle: Version 0.2.0
 ---
 
-
 # Example: Bars and Tones and Slates
 
 To see the full example scroll down to the end or open the [raw json file](raw.json).

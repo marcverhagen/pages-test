@@ -2,8 +2,9 @@
 layout: page
 title: MMIF Specification
 subtitle: Version 0.2.0
-
 ---
+
+
 
 # Example: EAST, Tesseract and Typing
 

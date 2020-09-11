@@ -6,7 +6,7 @@ subtitle: Version 0.2.0
 
 MMIF is an annotation format for audiovisual media and associated text like transcripts and closed captions. It is a JSON-LD format used to transport data between CLAMS services and is inspired by and partially based on LIF, the [LAPPS Interchange Format](https://wiki.lappsgrid.org/interchange/). MMIF is pronounced *mif* or *em-mif*, or, if you like to hum, *mmmmmif*.
 
-MMIF consist of two formal components in addition to this more informal specification:
+MMIF consists of two formal components in addition to this more informal specification:
 1. The JSON schema:
   - [https://mmif.clams.ai/0.2.0/schema/mmif.json](schema/mmif.json)
 1. The Vocabularies (the type hierarchies):
@@ -461,13 +461,13 @@ Using a LAPPS type is actually an instance of the more general notion that the v
 
 This assumes that [https://schema.org/Clip](https://schema.org/Clip) defines all the features used in the *properties* dictionary. One little disconnect here is that in MMIF we insist on each annotation having an identifier in the *id* property and as it happens [https://schema.org](https://schema.org) does not define an *id* attribute, although it does define *identifier*. 
 
-The CLAMS Platform does require that a URL like [https://schema.org/Clip](https://schema.org/Clip) actually exists, but if it doesn't users of an application that creates the *Clip* type will not necessarily know exactly what the application does.
+The CLAMS Platform does not require that a URL like [https://schema.org/Clip](https://schema.org/Clip) actually exists, but if it doesn't users of an application that creates the *Clip* type will not know exactly what the application creates.
 
 
 
 ## 3. MIFF Examples
 
-To finish off this document we provide some examples of complete MMIF documents. We have the following examples:
+To finish off this document we provide some examples of complete MMIF documents:
 
 
 | example                                                   | description                                                  |
@@ -476,9 +476,7 @@ To finish off this document we provide some examples of complete MMIF documents.
 | [east-tesseract-typing](samples/east-tesseract-typing) | EAST text box recognition followed by Tesseract OCR and semantic typing. |
 | [segmenter-kaldi-ner](samples/segmenter-kaldi-ner)     | Audio segmentation followed by Kaldi speech recognition and NER. |
 
-
 Each example has some comments and a link to a raw JSON file.
 
-As we move along with integrating new applications, other examples will be added with other kinds of annotation types.
-
+As we move along integrating new applications, other examples will be added with other kinds of annotation types.
 
